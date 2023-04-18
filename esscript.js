@@ -7,7 +7,7 @@ function countdown() {
   const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-  countdownElement.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  countdownElement.innerHTML = `${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundas`;
 }
 
 setInterval(countdown, 1000);
